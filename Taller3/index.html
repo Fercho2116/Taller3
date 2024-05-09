@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <div class="logo">
+                <img src="logo_consultorio.jpg" alt="Logo" width="150px" height="150px">
+            </div>
+            <h1>Consultorio Sana sana</h1>
+            <div class="reserva">
+                <div class="redes-sociales">
+                    <a href="#">
+                        <img src="facebook.png" alt="Facebook" width="50px" height="50px">
+                    </a>
+                    <a href="#">
+                        <img src="twitter.png" alt="Twitter" width="50px" height="50px">
+                    </a>
+                    <a href="#">
+                        <img src="intagram.jpeg" alt="Instagram" width="50px" height="50px">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carrusel">Personal medico</a></li>
+                <li><a href="#seccion1">Contamos con</a></li>
+                <li><a href="#seccion2">Cita</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Tu bienestar es nuestra prioridad.</p>
+        </section>
+
+        <section id="carr">
+            <h2>Nuestro personal medico</h2>
+           
+        </section>
+        <div class="contenedor-carrusel">
+            <div class="carrusel">
+                <div class="slide" style="background-image: url('img1.jpg')"></div>
+                <div class="slide" style="background-image: url('img2.jpg')"></div>
+                <div class="slide" style="background-image: url('img3.jpg')"></div>
+            </div>
+            <div class="indicadores">
+                <button class="indicador" data-slide="0"></button>
+                <button class="indicador" data-slide="1"></button>
+                <button class="indicador" data-slide="2"></button>
+            </div>
+        </div>
+        <section id="seccion1">
+            <h2>Contamos con</h2>
+            <div class="galeria">
+                <div class="imagen">
+                    <img src="lab.jpg" alt="Laboratorio">
+                </div>
+                <div class="imagen">
+                    <img src="urgencias.jpg" alt="Urgencias">
+                </div>
+                <div class="imagen">
+                    <img src="tcenologia.jpeg" alt="Tecnologia">
+                </div>
+                <div class="imagen">
+                    <img src="pacientes.jpg" alt="Paciente">
+                </div>
+                <div class="imagen">
+                    <img src="consultorio.jpg" alt="Consultorio">
+                </div>
+                <div class="imagen">
+                    <img src="servicios.jpeg" alt="Servicios">
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion2">
+            <h2>Agenda tu cita</h2>
+            <p>Dejanos tu informacion para ponernos en contacto contigo.</p>
+            <form action="procesar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="acerca-de">
+            <h2>Acerca de</h2>
+            <ul>
+                <li>Detrás de cada consulta, hay un equipo comprometido contigo.</li>
+                <li>Nuestra historia: años de experiencia al servicio de tu salud.</li>
+                <li>Nuestra promesa: atención médica de calidad y calidez humana.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi sitio web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
